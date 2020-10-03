@@ -21,6 +21,7 @@ local.properties
 .idea/scopes/scope_settings.xml
 .idea/codeStyles/Project.xml
 .idea/vcs.xml
+.idea/gradle.xml
 .idea/caches/build_file_checksums.ser
 .idea/assetWizardSettings.xml
 *.iml
