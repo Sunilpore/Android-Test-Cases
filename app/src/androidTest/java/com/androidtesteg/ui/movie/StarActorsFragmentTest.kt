@@ -24,12 +24,13 @@ class StarActorsFragmentTest{
         val bundle = Bundle()
         bundle.putStringArrayList("args_actors", starActors)
 
+        //launch StarActors Frgament
         val scenario = launchFragmentInContainer<StarActorsFragment>(
             fragmentArgs = bundle,
             factory = fragmentFactory
         )
 
-        //Verify
+        //Verify to set actors name on UI
         Espresso.onView(ViewMatchers.withId(R.id.star_actors_text)).check(
             ViewAssertions.matches(
                 ViewMatchers.withText(

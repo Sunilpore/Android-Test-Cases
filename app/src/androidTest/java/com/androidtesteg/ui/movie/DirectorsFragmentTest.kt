@@ -24,12 +24,13 @@ class DirectorsFragmentTest{
         val bundle = Bundle()
         bundle.putStringArrayList("args_directors", directors)
 
+        //launch Director fragment
         val scenario = launchFragmentInContainer<DirectorsFragment>(
             fragmentArgs = bundle,
             factory = fragmentFactory
         )
 
-        //Verify
+        //Verify director text name on UI
         onView(withId(R.id.directors_text)).check(matches(withText(DirectorsFragment.stringBuilderForDirectors(directors))))
 
     }

@@ -27,13 +27,16 @@ class MovieDetailFragmentTest{
         val bundle = Bundle()
         bundle.putInt("movie_id", movie.id)
 
+        //launch fragment
         val scenario = launchFragmentInContainer<MovieDetailFragment>(
             fragmentArgs = bundle,
             factory = fragmentFactory
         )
 
+        //check movie title
         onView(withId(R.id.movie_title)).check(matches(withText(movie.title)))
 
+        //check movie description
         onView(withId(R.id.movie_description)).check(matches(withText(movie.description)))
 
     }
