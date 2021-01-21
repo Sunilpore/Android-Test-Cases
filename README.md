@@ -2,8 +2,16 @@
 Test cases for Android Project
 
 Note:->
-Here, we test camera intent pick image test case
+Here we test material dialog testing
 
+Material Dialog Reference Link :-
+https://github.com/afollestad/material-dialogs
+
+
+
+--------------------------------------------------------------
+Previous Section
+--------------------------------------------------------------
 
 ->Image Mediapicker code
 https://stackoverflow.com/questions/6602417/-get-the-uri-of-an-image-stored-in-drawable
